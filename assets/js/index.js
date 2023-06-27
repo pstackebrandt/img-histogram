@@ -38,7 +38,16 @@ const handleImages = () => {
 
         // Bilddaten aus dem Canvas lesen
         let imgData = ctx.getImageData(0, 0, c.width, c.height);
+
+        // The image data is an ImageData object that contains the pixel data for
+        // the specified rectangle of the canvas. This object has width and height 
+        // properties (representing the dimensions of the rectangle) and a data property,
+        // which is a Uint8ClampedArray holding the pixel data. Each pixel is 
+        // represented by four values in this array, indicating the red, green, blue, and 
+        // alpha (transparency) values of the pixel.
+        
         // console.log(imgData);
+
         // Nur das Daten-Array an die Funktion übergeben
         analyzeImgData(imgData.data).then(
             result => {
