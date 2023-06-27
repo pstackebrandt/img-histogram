@@ -1,0 +1,23 @@
+.bild {
+    position: relative;
+    display: block;
+    padding: 5px;
+    margin: 5px;
+    background: #eee;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+ .preview {
+    position: relative;
+    display: inline-block;
+    height: 150px;
+    margin:2px;
+}
+
+.cPreview {
+    position: relative;
+    display: inline-block;
+    height: 300px;
+    margin:2px;
+}
